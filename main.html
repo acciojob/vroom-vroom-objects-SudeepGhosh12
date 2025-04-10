@@ -3,11 +3,38 @@
 <html>
 
 <head>
+	<style>
+	body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+    input, button {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    #output {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      max-width: 400px;
+    }
 	<link rel="stylesheet" href="styles.css">
+		</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <h1>SportsCar Info Generator</h1>
+
+  <label>Make: <input type="text" id="make" placeholder="e.g. Ferrari"></label><br>
+  <label>Model: <input type="text" id="model" placeholder="e.g. Testarossa"></label><br>
+  <label>Top Speed (mph): <input type="number" id="topSpeed" placeholder="e.g. 200"></label><br>
+  <button onclick="createCar()">Create SportsCar</button>
+
+  <div id="output"></div>
     <script type="text/javascript" src="./script.js">
 </script>
 
